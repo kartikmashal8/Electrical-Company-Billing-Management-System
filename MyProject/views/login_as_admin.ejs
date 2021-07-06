@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Welcome to the website of Kartik Electrical Company">
+    <meta name="keywords" content="online bill pay,online electrical bill,bill paying">
+    <link rel="stylesheet" href="/CSSfiles/stylecss.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital@1&display=swap" rel="stylesheet">
+    <title>Welcome to Kartik Electrical Company</title>
+</head>
+<body>
+    <header>
+      <nav id="navbar">
+          <div class="container">
+          <h1 class="logo"><a href="https://myproject-testing.run-ap-south1.goorm.io/">KEC <i class="fa fa-lightbulb-o"></i></a></h1>
+          <ul>
+              <li><a href="https://myproject-testing.run-ap-south1.goorm.io/login">Log-Out</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    
+    <section id="login_as_admin">
+        <div class="welcome">
+            <p>Welcome to <span>KEC <i class="fa fa-lightbulb-o"></i></span> Sir</p>
+        </div>
+        <div class="details">
+            <p>Your Name                    :-<%=data[0].first_name%><%=data[0].middle_name%><<%=data[0].last_name%>/p>
+            <p>Employee Identity Number     :-<%=data[0].emp_id%></p>
+            <p>Admin Identity Number        :-<%=data[0].admin_id%></p>
+            <p>Location                     :-<%=data[0].loc_id%></p>
+            <p>E-mail Id                    :-<%=data[0].email_id%></p>
+            <p>Number of Branches Under You :-</p>
+            <br>
+            <div class="edit_admin edit_admin2">
+                <label for="edit_admin" class="btn"><a href="/Views/edit_profile_for_admin.html">Edit My Profile</a></label>
+                <label for="change_password" class="btn"><a href="/Views/change_password_for_employee.html">Change Password</a></label>
+            </div>
+        </div>
+        <br>
+        <div class="facilities">
+            <div class="facilities_2">
+            <a class="btn" href="/Views/create_cust_acc.html">Create Customer Account</a>
+            <a class="btn" href="/Views/create_emp_acc.html">Create Employee Account</a>
+            <a class="btn" href="/Views/display_cust_details.html">Display All Customer Details</a>
+            <a class="btn" href="/Views/display_emp_details.html">Diaplay All Employee Details</a>
+            <a class="btn" href="/Views/del_cust.html">Delete Customer Account</a>
+            <a class="btn" href="/Views/del_emp.html">Delete Employee Account</a>
+            <a class="btn" href="/Views/change_employee_details.html">Change Employee Account Details</a>
+            <a class="btn" href="/Views/change_customer_details.html">Change Customer Account Details</a>
+            <a class="btn" href="/Views/branches_under_you.html">Branches Under You</a>
+            <a class="btn" href="/Views/all_location_info.html">All Location Info</a>
+            </div>
+        </div>
+        <div class="picture">
+           <p> <span class="thought_1">Trying to work after lunch is like</span><br><span class="thought_2">Compel To Do Work</span><br><span class="thought_2">Even Though We Don't Want</span></p> 
+        </div>
+        <div class="picture-2">
+           <p> Never STOP Looing Up</p>
+        </div>
+    </section>
+
+    <div class="clr"></div>
+    <br>
+    <footer id="main-footer">
+      <p>Kartik Electrical Company &copy; 2019 All Rights Reserved</p>
+    </footer>
+  
+</body>
+</html>

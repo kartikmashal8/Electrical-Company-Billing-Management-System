@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Welcome to the website of Kartik Electrical Company">
+    <meta name="keywords" content="online bill pay,online electrical bill,bill paying">
+    <link rel="stylesheet" href="/CSSfiles/stylecss.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital@1&display=swap" rel="stylesheet">
+    <title>Welcome to Kartik Electrical Company</title>
+</head>
+<body>
+    <header>
+      <nav id="navbar">
+          <div class="container">
+          <h1 class="logo"><a href="/Views/page1.html">KEC <i class="fa fa-lightbulb-o"></i></a></h1>
+          <ul>
+              <li><a href="/Views/login.html">Log-Out</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    
+    <section id="login_as_admin">
+        <div class="welcome">
+            <p>Welcome to <span>KEC <i class="fa fa-lightbulb-o"></i></span> Sir</p>
+        </div>
+        <div class="details">
+            <p>Your Name                    :-<%=data[0].first_name%> <%=data[0].middle_name%> <%=data[0].last_name%></p>
+            <p>Employee Identity Number     :-<%=data[0].emp_id%></p>
+            <p>Location Identity Number     :-<%=data[0].loc_id%></p>
+            <p>Branch Identity Number       :-<%=data[0].branch_id%></p>
+            <p>E-mail Id                    :-<%=data[0].email_id%></p>
+            <p>Number OF Wards              :-</p>
+            <br>
+            <div class="edit_admin edit_admin2">
+                <label for="edit_admin" class="btn"><a href="/Views/edit_profile_for_admin.html">Edit My Profile</a></label>
+                <label for="change_password" class="btn"><a href="/Views/change_password_for_employee.html">Change Password</a></label>
+            </div>
+        </div>
+        <br>
+        <div class="facilities_3">
+            <div class="facilities_4">
+            <a class="btn" href="/Views/generate_bills.html">Generate Bills</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="clr"></div>
+    <br>
+    <footer id="main-footer">
+      <p>Kartik Electrical Company &copy; 2019 All Rights Reserved</p>
+    </footer>
+  
+</body>
+</html>

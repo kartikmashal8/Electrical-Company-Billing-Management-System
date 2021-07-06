@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Welcome to the website of Kartik Electrical Company">
+    <meta name="keywords" content="online bill pay,online electrical bill,bill paying">
+    <link rel="stylesheet" href="/CSSfiles/stylecss.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="/JSFiles/script.js"></script>
+    <title>Welcome to Kartik Electrical Company</title>
+</head>
+<body>
+    <header>
+      <nav id="navbar">
+          <div class="container">
+          <h1 class="logo"><a href="https://myproject-testing.run-ap-south1.goorm.io/">KEC <i class="fa fa-lightbulb-o"></i></a></h1>
+          <ul>
+              <li><a href="https://myproject-testing.run-ap-south1.goorm.io/">Home</a></li>
+              <li><a  href="https://myproject-testing.run-ap-south1.goorm.io/about">About</a></li>
+              <li><a  href="https://myproject-testing.run-ap-south1.goorm.io/contact">Contact</a></li>
+              <li><a class="current" href="https://myproject-testing.run-ap-south1.goorm.io/login">Login</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    
+    <section id="login">
+    <form onsubmit="return validate_login()" method="post" action="/login" class="login-box">
+        <h1>Login</h1>
+        <div class="textbox">
+            <i class="fa fa-user fa-2x" aria-hidden="true"></i>
+            <input type="text" placeholder="User id" id="u_id" name="id" value="">
+        </div>
+        <div class="textbox">
+            <i class="fa fa-key fa-2x" aria-hidden="true"></i>
+            <input type="password" placeholder="Password" id="pass" name="password" value="">
+        </div>
+        <div class="button_of_signin">
+        <button type="submit" class="btn">Sign in</button>
+      </div>
+        <!-- <input class="btn" type="button" name="" value="Sign in"> -->
+       <div class="forgotten">
+          <!-- <a href="/">Forgotten Password</a> -->
+       </div>
+      </form>
+    </section> 
+
+
+    <footer id="main-footer">
+      <p>Kartik Electrical Company &copy; 2019 All Rights Reserved</p>
+    </footer>
+  
+</body>
+</html>

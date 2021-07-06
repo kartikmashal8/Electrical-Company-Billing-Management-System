@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Welcome to the website of Kartik Electrical Company">
+    <meta name="keywords" content="online bill pay,online electrical bill,bill paying">
+    <link rel="stylesheet" href="/CSSfiles/stylecss.css">
+    <script src="/JSFiles/script.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Welcome to Kartik Electrical Company</title>
+</head>
+<body>
+    <header>
+      <nav id="navbar">
+          <div class="container">
+          <h1 class="logo"><a href="/Views/page1.html">KEC <i class="fa fa-lightbulb-o"></i></a></h1>
+          <ul>
+              <li><a href="/Views/login.html">Log-Out</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section id="contact-form" class="py-3 edit_admin">
+        <div class="container">
+            <h1 class="l-heading"> <span class="text-primary">Edit</span> PROFILE </h1>
+            <p>Please fill the below form to Edit Your Profile</p>
+            <form onsubmit="return validate_edit_profile_for_admin()" action="/Views/work_done_successfully.html">
+                <div class="form-group">
+                    <label for="fname">First Name :-</label>
+                    <input type="text" name="fname" id="fname">
+                    <label id="f_name" style="color: red; visibility: hidden;">Invalid..</label>
+                </div>
+                <div class="form-group">
+                    <label for="mname">Middle Name :-</label>
+                    <input type="text" name="mname" id="mname">
+                    <label id="m_name" style="color: red; visibility: hidden;">Invalid..</label>
+                </div>
+                <div class="form-group">                                                         
+                    <label for="lname">Last Name :-</label>
+                    <input type="text" name="lname" id="lname">
+                    <label id="l_name" style="color: red; visibility: hidden;">Invalid..</label>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email :-</label>
+                    <input type="email" name="email" id="email">
+                    <label id="e_mail" style="color: red; visibility: hidden;">Invalid..</label>
+                </div>
+                <div class="form-group">
+                    <label for="res_address">Residential Address :-</label>
+                    <textarea name="res_address" id="res_address" cols="30" rows="10"></textarea>
+                    <label id="r_address" style="color: red; visibility: hidden;">Invalid..</label>
+                </div>
+                <div class="form-group">
+                    <label for="mob_no">Mobile Number :-</label>
+                    <input type="number" name="mob_no" id="mob_no">
+                    <label id="mob_number" style="color: red; visibility: hidden;">Invalid..</label>
+                </div>
+                <div class="form-group">
+                    <label for="alt_mob_no">Alternate Mobile Number :-</label>
+                    <input type="number" name="alt_mob_no" id="alt_mob_no">
+                    <label id="alt_no" style="color: red; visibility: hidden;">Invalid..</label>
+                </div>
+                   <button type="submit" class="btn submit_changed_profile">Submit</button>                              
+            </form>
+        </div>
+    </section>
+
+    <div class="clr"></div>
+    <footer id="main-footer">
+      <p>Kartik Electrical Company &copy; 2019 All Rights Reserved</p>
+
+    </footer>
+  
+</body>
+</html>

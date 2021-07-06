@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Welcome to the website of Kartik Electrical Company">
+    <meta name="keywords" content="online bill pay,online electrical bill,bill paying">
+    <link rel="stylesheet" href="/CSSfiles/stylecss.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital@1&display=swap" rel="stylesheet">
+    <title>Welcome to Kartik Electrical Company</title>
+</head>
+<body>
+    <header>
+      <nav id="navbar">
+          <div class="container">
+          <h1 class="logo"><a href="https://myproject-testing.run-ap-south1.goorm.io/">KEC <i class="fa fa-lightbulb-o"></i></a></h1>
+          <ul>
+              <li><a href="https://myproject-testing.run-ap-south1.goorm.io/login">Log-Out</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    
+    <section id="login_as_admin">
+        <div class="welcome">
+            <p>Welcome to <span>KEC <i class="fa fa-lightbulb-o"></i></span> Sir</p>
+        </div>
+        <br>
+        <div class="disp_cust_hedding">Information Of All Your Past Bill Payments :-</div>
+        <br>
+        <section id="cust_info" class="branch_info">
+        <table>
+            <thead>
+                <tr>
+                    <th>Serial_No</th>
+                    <th>Billing Date</th>
+                    <th>Total Amount</th>
+                    <th>Mode of Payment</th>
+                    <th>Due Date</th>
+					<th>Paid Date</th>
+                </tr>
+            </thead>
+			<% for( var ar in data) {%>
+            <tr>
+				    <th><%=[ar]%></th>
+                    <th><%=data[ar].billing_date%></th>
+                    <th><%=data[ar].total_amount%></th>
+                    <th><%=data[ar].mode_of_payment%></th>
+                    <th><%=data[ar].due_date%></th>
+					<th><%=data[ar].paid_date%></th>
+                </tr>
+			<% } %>
+        </table>
+    </section>
+        
+    <div class="clr"></div>
+    <br>
+    <footer id="main-footer">
+      <p>Kartik Electrical Company &copy; 2019 All Rights Reserved</p>
+    </footer>
+  
+</body>
+</html>

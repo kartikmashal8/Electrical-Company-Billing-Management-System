@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Welcome to the website of Kartik Electrical Company">
+    <meta name="keywords" content="online bill pay,online electrical bill,bill paying">
+    <link rel="stylesheet" href="/CSSfiles/stylecss.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital@1&display=swap" rel="stylesheet">
+    <script src="/JSFiles//script.js"></script>
+    <title>Welcome to Kartik Electrical Company</title>
+</head>
+<body>
+    <header>
+      <nav id="navbar">
+          <div class="container">
+          <h1 class="logo"><a href="/Views/page1.html">KEC <i class="fa fa-lightbulb-o"></i></a></h1>
+          <ul>
+              <li><a href="/Views/login.html">Log-Out</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section id="contact-form" class="py-3">
+        <div class="container">
+            <h1 class="l-heading"> <span class="text-primary">FILL UP</span> FORM </h1>
+            <p>PLEASE FILL ALL THE NECESSARY DETAILS OF THE <span id="cust_emp"> CUSTOMER </span> CAREFULLY. . . . . .</p>
+    <form onsubmit="return validate_create_customer_acc()" action="/Views/work_done_successfully.html">
+          <div class="form-group">
+              <label for="fname">First Name :-</label>
+              <input type="text" class="fname" id="fname">
+              <label id="fst_name" style="color: red; visibility: hidden;">Invalid..</label>
+          </div>
+          <div class="form-group">
+              <label for="mname">Middle Name :-</label>
+              <input type="text" class="mname" id="mname">
+              <label id="mid_name" style="color: red; visibility: hidden;">Invalid..</label>
+          </div>
+          <div class="form-group">
+              <label for="lname">Last Name :-</label>
+              <input type="text" class="lname" id="lname">
+              <label id="lst_name" style="color: red; visibility: hidden;">Invalid..</label>
+          </div>
+          <div class="form-group">
+              <label for="email">E-mail Id :-</label>
+              <input type="email" class="email" id="email">
+              <label id="e_mail" style="color: red; visibility: hidden;">Invalid..</label>
+          </div>
+          <div class="form-group">
+              <label for="address">Residential Address :-</label>
+              <textarea name="address" id="address" cols="30" rows="10"></textarea>
+              <label id="res_address" style="color: red; visibility: hidden;">Invalid..</label>
+          </div>
+          <div class="form-group">
+              <label for="dob">Date Of Birth :-</label>
+              <input type="date" class="dob" id="dob">
+              <label id="dt_of_birth" style="color: red; visibility: hidden;">Invalid..</label>
+          </div>
+          <div class="form-group">
+              <label for="mob_no">Mobile Number :-</label>
+              <input type="number" class="mob_no" id="mob_no">
+              <label id="mob_number" style="color: red; visibility: hidden;">Invalid..</label>
+          </div>
+          <div class="form-group">
+              <label for="alt_mob_no">Alternate Mobile Number :-</label>
+              <input type="number" class="alt_mob_no" id="alt_mob_no">
+              <label id="alt_mob_number" style="color: red; visibility: hidden;">Invalid..</label>
+          </div>
+          <div class="form-group">
+              <label for="date_of_conn">Date Of Connection :-</label>
+              <input type="date" class="date_of_conn0" id="date_of_conn">
+              <label id="conn_date" style="color: red; visibility: hidden;">Invalid..</label>
+          </div>
+          <div class="form-group">
+              <label for="met_id">Meter Identity Number :-</label>
+              <input type="number" class="met_id" id="met_id">
+              <label id="meter_id" style="color: red; visibility: hidden;">Invalid..</label>
+          </div>
+          <div class="form-group">
+              <label for="br_id">Branch Identity Number :-</label>
+              <input type="number" class="br_id" id="br_id">
+              <label id="branch_id" style="color: red; visibility: hidden;">Invalid..</label>
+          </div>
+          <div class="form-group">
+            <label for="ward_no">Ward Number :-</label>
+            <input type="number" class="ward_no" id="ward_no">
+            <label id="wrd_no" style="color: red; visibility: hidden;">Invalid..</label>
+        </div>
+          <div class="form-group">
+            <label for="cust_id">Customer Identity Number :-</label>
+            <input type="text" class="cust_id" id="cust_id">
+            <label id="cst_id" style="color: red; visibility: hidden;">Invalid..</label>
+        </div>
+        <div class="form-group">
+            <label for="password">Password :-</label>
+            <input type="password" class="password" id="password">
+            <label id="cust_password" style="color: red; visibility: hidden;">Invalid..</label>
+        </div>
+        <div class="form-group">
+            <label for="cpass">Confirm Password :-</label>
+            <input type="password" class="cpass" id="cpass">
+            <label id="con_cust_password" style="color: red; visibility: hidden;">Invalid..</label>
+        </div>
+        <button class="btn" id="create_emp" type="submit">Done</button>
+        <button class="btn" id="create_emp" type="reset">Reset</button>
+    </form>
+    </div>
+    </section>
+
+    <div class="clr"></div>
+    <br>
+    <footer id="main-footer">
+      <p>Kartik Electrical Company &copy; 2019 All Rights Reserved</p>
+    </footer>
+  
+</body>
+</html>

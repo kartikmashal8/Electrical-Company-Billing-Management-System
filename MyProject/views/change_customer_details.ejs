@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Welcome to the website of Kartik Electrical Company">
+    <meta name="keywords" content="online bill pay,online electrical bill,bill paying">
+    <link rel="stylesheet" href="/CSSfiles/stylecss.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="/JSFiles/script.js"></script>
+    <title>Welcome to Kartik Electrical Company</title>
+</head>
+<body>
+    <header>
+      <nav id="navbar">
+          <div class="container">
+          <h1 class="logo"><a href="/Views/page1.html">KEC <i class="fa fa-lightbulb-o"></i></a></h1>
+          <ul>
+              <li><a href="/Views/login.html">Log-Out</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section id="contact-form" class="py-3 edit_admin change_emp">
+        <div class="container">
+            <h1 class="l-heading"> <span class="text-primary">Change </span>Customer Account </h1>
+            <p>Please fill the below form to Change Customer Details</p>
+            <form onsubmit="return validate_change_cust_details()" action="#">
+                <div class="form-group">
+                    <label for="c_id">Customer Identity Number :-</label>
+                    <input type="text" name="c_id" id="c_id">
+                    <label id="cust_id" style="color: red; visibility: hidden;">Invalid..</label>
+                </div>
+                <div class="form-group">
+                    <label for="location_id">Location Identity Number :-</label>
+                    <input type="number" name="location_id" id="location_id">
+                    <label id="loc_id" style="color: red; visibility: hidden;">Invalid..</label>
+                </div>
+                <div class="form-group">
+                    <label for="branch_id">Branch Identity Number :-</label>
+                    <input type="number" name="branch_id" id="branch_id">
+                    <label id="br_id" style="color: red; visibility: hidden;">Invalid..</label>
+                </div>
+                <div class="form-group">
+                    <label for="dobc">Date Of Birth :-</label>
+                    <input type="date" name="dobc" id="dobc">
+                    <label id="dob" style="color: red; visibility: hidden;">Invalid..</label>
+                </div>
+                <div class="form-group">
+                    <label for="m_id">Meter Identity Number :-</label>
+                    <input type="number" name="m_id" id="m_id">
+                    <label id="mtr_id" style="color: red; visibility: hidden;">Invalid..</label>
+                </div>
+                <div class="form-group">
+                    <label for="docc">Date Of Connection :-</label>
+                    <input type="date" class="docc" id="docc">
+                    <label id="dt_of_conn" style="color: red; visibility: hidden;">Invalid..</label>
+                </div>
+                   <button type="submit" class="btn submit_changed_profile">Submit</button>                              
+            </form>
+        </div>
+    </section>
+      
+    <footer id="main-footer">
+      <p>Kartik Electrical Company &copy; 2019 All Rights Reserved</p>
+
+    </footer>
+  
+</body>
+</html>

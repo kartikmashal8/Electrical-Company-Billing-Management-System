@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Welcome to the website of Kartik Electrical Company">
+    <meta name="keywords" content="online bill pay,online electrical bill,bill paying">
+    <link rel="stylesheet" href="/CSSfiles/stylecss.css">
+    <script src="/JSFiles/script.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Welcome to Kartik Electrical Company</title>
+</head>
+<body>
+    <header>
+      <nav id="navbar">
+          <div class="container">
+          <h1 class="logo"><a href="https://myproject-testing.run-ap-south1.goorm.io/">KEC <i class="fa fa-lightbulb-o"></i></a></h1>
+          <ul>
+              <li><a href="https://myproject-testing.run-ap-south1.goorm.io/login">Log-Out</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section id="contact-form" class="py-3 complain_form">
+        <div class="container">
+            <h1 class="l-heading"> <span class="text-primary">Complain</span> FORM </h1>
+            <p>Please Fill The Below Form To Get Your Problem Cleared</p>
+            <form onsubmit="return validate_complain()" method="post" action="https://myproject-testing.run-ap-south1.goorm.io/complain/<%=cid%>">
+                <div class="form-group">
+                    <label for="message">Please Describe Your Complain</label>
+                   <textarea name="message" id="message"></textarea>
+                   <label id="msg" style="color: red; visibility: hidden;">Invalid</label>
+                </div>
+                   <button type="submit" class="btn">Submit</button>                              
+            </form>
+        </div>
+    </section>
+    <section id="contact-info" class="bg-dark">
+        <div class="container">
+            <div class="box">
+                <i class="fa fa-building-o fa-3x"></i>
+                <h3>Address</h3>
+                <p>KHB COLONY VIJAYAPUR</p>
+            </div>
+              
+              <div class="box">
+                <i class="fa fa-phone fa-3x"></i>
+                <h3>Phone Number</h3>
+                <p>+91-9535911254</p>
+              </div>
+            
+              <div class="box">
+                <i class="fa fa-user fa-3x"></i>
+                <h3>Email</h3>
+                <p>kartikmashal8@gmail.com</p>
+              </div>
+        </div>
+    </section> 
+   
+
+      
+    <footer id="main-footer">
+      <p>Kartik Electrical Company &copy; 2019 All Rights Reserved</p>
+
+    </footer>
+  
+</body>
+</html>

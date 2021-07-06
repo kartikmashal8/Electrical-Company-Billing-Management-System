@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Welcome to the website of Kartik Electrical Company">
+    <meta name="keywords" content="online bill pay,online electrical bill,bill paying">
+    <link rel="stylesheet" href="/CSSfiles/stylecss.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital@1&display=swap" rel="stylesheet">
+    <title>Welcome to Kartik Electrical Company</title>
+</head>
+<body>
+    <header>
+      <nav id="navbar">
+          <div class="container">
+          <h1 class="logo"><a href="https://myproject-testing.run-ap-south1.goorm.io/">KEC <i class="fa fa-lightbulb-o"></i></a></h1>
+          <ul>
+              <li><a href="https://myproject-testing.run-ap-south1.goorm.io/login">Log-Out</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    
+    <section id="login_as_admin" class="login_as_customer">
+        <div class="welcome">
+            <p>Welcome to <span>KEC <i class="fa fa-lightbulb-o"></i></span> Sir</p>
+        </div>
+        <div class="details">
+            <p>Your Name                    :-  <%=data[0].first_name%> <%=data[0].middle_name%> <%=data[0].last_name%></p>
+            <p>Customer Identity Number     :-  <%=data[0].customer_id%></p>
+            <p>Admin Name ( Admin id )      :-  <%=data[0].adm_name%> <%=data[0].adm_lastname%> ( <%=data[0].admin_id%> )</p>
+            <p>Location Identity Number     :-  <%=data[0].customer_id%></p>
+            <p>Branch Identity Number       :-  <%=data[0].branch_id%></p>
+            <p>E-mail Id                    :-  <%=data[0].email_id%></p>
+            <p>Mobile Number                :-  <%=data[0].mob_number%></p>
+            <p>Ward Number                  :-  <%=data[0].ward_number%></p>
+            <p>Meter Id                     :-  <%=data[0].meter_id%></p>
+            <br>
+            <div class="edit_admin edit_admin2">
+                <label for="edit_admin" class="btn"><a href="https://myproject-testing.run-ap-south1.goorm.io/edit_profile_for_customer/<%=cid%>">Edit My Profile</a></label>
+                <label for="change_password" class="btn"><a href="https://myproject-testing.run-ap-south1.goorm.io/change_password_for_customer/<%=cid%>">Change Password</a></label>
+            </div>
+        </div>
+        <br>
+        <div class="facilities">
+            <div class="facilities_2">
+            <a class="btn" href="https://myproject-testing.run-ap-south1.goorm.io/history/<%=cid%>">History</a>
+            <a class="btn" href="https://myproject-testing.run-ap-south1.goorm.io/pay_bill/<%=cid%>">Pay Bill</a>
+            <a class="btn" href="https://myproject-testing.run-ap-south1.goorm.io/complain/<%=cid%>">Complain</a>
+            <div class="pic"> <p> What Travels FASTER Than The Seed Of Light <i class="fa fa-question"></i></p></div>
+            </div>
+        </div>
+        
+        <div class="picture">
+           <p> Never Leave Ur Bill Unpaid <i class="fa fa-smile-o fa-2x"></i></p> 
+        </div>
+    </section>
+
+    <div class="clr"></div>
+    <br>
+    <footer id="main-footer">
+      <p>Kartik Electrical Company &copy; 2019 All Rights Reserved</p>
+    </footer>
+  
+</body>
+</html>
